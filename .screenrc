@@ -1,0 +1,15 @@
+vbell off
+altscreen on
+termcapinfo xterm* ti@:te@
+windowlist string "%4n %h%=%f"
+
+# hotkey win
+bindkey ^[z prev
+bindkey ^[x next
+
+#term screen-256color
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+
+caption always "%{= kw}%-w%{= B}%n %t%{-}%+w %-= @%H - %LD %d %LM - %c"
