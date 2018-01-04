@@ -1,14 +1,24 @@
 "General setting"
 
 set nu
+
+syntax enable
+set smartindent
 set tabstop=4
+set shiftwidth=4
+set expandtab
+" set indentexpr='' "
+
 set showcmd
+set list
+set listchars=tab:\|\
+
 hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
 hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
 
 hi DiffAdd term=reverse cterm=bold ctermbg=black ctermfg=green
 hi DiffChange term=reverse cterm=bold ctermbg=black ctermfg=gray
-hi DiffText term=reverse cterm=bold ctermbg=darkblue ctermfg=yellow
+hi DiffText term=reverse cterm=bold ctermbg=darkyellow ctermfg=black
 hi DiffDelete term=reverse cterm=bold ctermbg=black ctermfg=darkred
 
 augroup filetypedetect
@@ -59,6 +69,7 @@ call vundle#begin()
 " required!
 Bundle 'gmarik/vundle'
 
+Bundle 'jparise/vim-graphql'
 Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
 
